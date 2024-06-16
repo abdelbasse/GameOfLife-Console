@@ -34,6 +34,13 @@ public:
     Cell(bool isAlive, vector2<T> curentPos, vector2<T> OldPos) : isAlive(isAlive), curentPos(curentPos), OldPos(OldPos) {}
 };
 
+template <typename T>
+class Life
+{
+public:
+    Cell<T> *Grid;
+};
+
 int main()
 {
     int Old;
